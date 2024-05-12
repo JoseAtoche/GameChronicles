@@ -1,0 +1,6 @@
+@GameCroniclesAPi_HostAddress = http://localhost:5039
+
+GET {{GameCroniclesAPi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

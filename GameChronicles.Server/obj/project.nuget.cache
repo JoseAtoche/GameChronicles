@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/dXxhytCQdhJu8RcwelFRZUn9LNwJ/YhPNICj5EfE7o/aEeICQV17h9S/6VXre/3f5NPXVWET1LqxBYicC84zA==",
+  "dgSpecHash": "N/UY9YPvKq5HKAYiMvI1DSn1dAcImXliZRPKYy88Dupczyz6BKMYV/v5Ijro2SKeup/eHRHMb6+yr+OMv6leXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\GameChronicles.Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.4\\microsoft.aspnetcore.spaproxy.8.0.4.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.5\\microsoft.aspnetcore.spaproxy.8.0.5.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",

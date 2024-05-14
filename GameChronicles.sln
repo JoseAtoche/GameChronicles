@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameChronicles.Server", "GameChronicles.Server\GameChronicles.Server.csproj", "{FB5C5946-40D1-4876-B26D-728B50082903}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameChronicles.Server", "GameChronicles.Server\GameChronicles.Server.csproj", "{FB5C5946-40D1-4876-B26D-728B50082903}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "gamechronicles.client", "gamechronicles.client\gamechronicles.client.esproj", "{A094A99E-5A36-4CB2-914E-69791ECA6DA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicio", "Servicio\Servicio.csproj", "{08A01C4C-2A0A-479F-8499-51A2D7B0E90E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{E70B42CE-5C78-40CA-879D-D90768F2CD12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{27F6AB5F-96A6-4552-AC83-FAAA8C87366F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{7FDB5CCA-7B48-4282-B936-F55F07994FDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositorio", "Repositorio\Repositorio.csproj", "{8F0BD26C-5A8D-4B91-943A-DCB03834BC14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{1614E4D2-95A6-4013-9FBE-0CC856CB11D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,18 +29,18 @@ Global
 		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{08A01C4C-2A0A-479F-8499-51A2D7B0E90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08A01C4C-2A0A-479F-8499-51A2D7B0E90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08A01C4C-2A0A-479F-8499-51A2D7B0E90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08A01C4C-2A0A-479F-8499-51A2D7B0E90E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{27F6AB5F-96A6-4552-AC83-FAAA8C87366F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27F6AB5F-96A6-4552-AC83-FAAA8C87366F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27F6AB5F-96A6-4552-AC83-FAAA8C87366F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27F6AB5F-96A6-4552-AC83-FAAA8C87366F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F0BD26C-5A8D-4B91-943A-DCB03834BC14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F0BD26C-5A8D-4B91-943A-DCB03834BC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F0BD26C-5A8D-4B91-943A-DCB03834BC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F0BD26C-5A8D-4B91-943A-DCB03834BC14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70B42CE-5C78-40CA-879D-D90768F2CD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70B42CE-5C78-40CA-879D-D90768F2CD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70B42CE-5C78-40CA-879D-D90768F2CD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70B42CE-5C78-40CA-879D-D90768F2CD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FDB5CCA-7B48-4282-B936-F55F07994FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FDB5CCA-7B48-4282-B936-F55F07994FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FDB5CCA-7B48-4282-B936-F55F07994FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FDB5CCA-7B48-4282-B936-F55F07994FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1614E4D2-95A6-4013-9FBE-0CC856CB11D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1614E4D2-95A6-4013-9FBE-0CC856CB11D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1614E4D2-95A6-4013-9FBE-0CC856CB11D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1614E4D2-95A6-4013-9FBE-0CC856CB11D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

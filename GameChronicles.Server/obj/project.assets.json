@@ -464,11 +464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\GameChronicles\\GameChronicles.Server\\GameChronicles.Server.csproj",
+      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\GameChronicles.Server.csproj",
       "projectName": "GameChronicles.Server",
-      "projectPath": "C:\\Users\\usuario\\source\\repos\\GameChronicles\\GameChronicles.Server\\GameChronicles.Server.csproj",
+      "projectPath": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\GameChronicles.Server.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\source\\repos\\GameChronicles\\GameChronicles.Server\\obj\\",
+      "outputPath": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

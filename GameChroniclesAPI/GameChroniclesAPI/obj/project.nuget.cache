@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "syU7KmNQfhS7bQBkh9zq15GlIR75f1pdyePLr7Ei3Vp8Lhqd9TxPWaEopD7zSnE/bmivOkVYgLfTQL9ZyWaXBg==",
+  "dgSpecHash": "yUVKYW6WG57dMRAm3cq8u6lTT+WNcU3DmTKPhCwclygitDyJ3oOfWcu9uUa6V/wUOPP1jAJprXXH8ZtTE6Vi+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\GameChronicles\\GameCroniclesAPI\\GameCroniclesAPi\\GameCroniclesAPi.csproj",
+  "projectFilePath": "C:\\Users\\usuario\\source\\repos\\GameChroniclesAPI\\GameChroniclesAPI\\GameChroniclesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

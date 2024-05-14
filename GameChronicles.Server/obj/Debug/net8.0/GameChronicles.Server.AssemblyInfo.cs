@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameChronicles.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5d919c9b1791fac0cd89b34050f4c809d93d297")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameChronicles.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameChronicles.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

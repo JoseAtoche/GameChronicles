@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\GameChronicles.Server.csproj": {}
+    "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\GameChronicles.Server\\GameChronicles.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuario\\source\\repos\\Domain\\Domain.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\usuario\\source\\repos\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\source\\repos\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,17 +64,17 @@
         }
       }
     },
-    "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\GameChronicles.Server.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\GameChronicles.Server\\GameChronicles.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\GameChronicles.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\GameChronicles.Server\\GameChronicles.Server.csproj",
         "projectName": "GameChronicles.Server",
-        "projectPath": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\GameChronicles.Server.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\GameChronicles.Server\\GameChronicles.Server.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\GameChronicles.Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,14 +88,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\usuario\\source\\repos\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\usuario\\source\\repos\\Domain\\Domain.csproj"
+              "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\Repository.csproj"
               },
-              "C:\\Users\\usuario\\source\\repos\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\usuario\\source\\repos\\Repository\\Repository.csproj"
-              },
-              "C:\\Users\\usuario\\source\\repos\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\usuario\\source\\repos\\Service\\Service.csproj"
+              "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Service\\Service.csproj"
               }
             }
           }
@@ -115,9 +112,37 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.AspNetCore.SpaProxy": {
               "target": "Package",
               "version": "[8.*-*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -147,17 +172,17 @@
         }
       }
     },
-    "C:\\Users\\usuario\\source\\repos\\Repository\\Repository.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\usuario\\source\\repos\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\source\\repos\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,7 +195,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -187,6 +216,30 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -207,17 +260,17 @@
         }
       }
     },
-    "C:\\Users\\usuario\\source\\repos\\Service\\Service.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\usuario\\source\\repos\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\source\\repos\\Service\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -230,7 +283,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Core\\Domain.csproj"
+              },
+              "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\Repository\\Repository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

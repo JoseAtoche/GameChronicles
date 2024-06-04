@@ -19,7 +19,7 @@ namespace GameChronicles.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<UserGame>> AddUserGame([FromBody] UserGame userGame)
         {
-            try
+            try { 
 
                 var addedUserGame = await _userGameService.AssignGameToUserAsync(userGame.UserId, userGame.GameId);
                 return Ok(addedUserGame);

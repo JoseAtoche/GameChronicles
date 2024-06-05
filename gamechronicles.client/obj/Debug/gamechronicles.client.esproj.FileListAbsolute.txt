@@ -1,1 +1,1 @@
-C:\Users\Usuario\Source\Repos\GameChronicles\gamechronicles.client\obj\Debug\gamechronicles.client.esproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\GameChronicles.Client\obj\Debug\gamechronicles.client.esproj.CoreCompileInputs.cache

@@ -540,3 +540,6 @@ C:\Users\usuario\source\repos\GameChronicles.Server\obj\Debug\net8.0\refint\Game
 C:\Users\usuario\source\repos\GameChronicles.Server\obj\Debug\net8.0\GameChronicles.Server.pdb
 C:\Users\usuario\source\repos\GameChronicles.Server\obj\Debug\net8.0\GameChronicles.Server.genruntimeconfig.cache
 C:\Users\usuario\source\repos\GameChronicles.Server\obj\Debug\net8.0\ref\GameChronicles.Server.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Frontend\package-lock.json
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Frontend\package.json
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Frontend\public\manifest.json

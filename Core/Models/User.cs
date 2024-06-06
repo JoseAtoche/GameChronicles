@@ -2,7 +2,7 @@
 
 namespace Core.Models
 {
-    public class User
+    public class User 
     {
         [Required]
         public int Id { get; set; }

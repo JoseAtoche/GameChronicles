@@ -1,6 +1,6 @@
 ﻿using Core.Models;
 
-namespace Service
+namespace Service.Interfaces
 {
     public interface IUserGameService
     {

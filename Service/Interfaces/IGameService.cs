@@ -1,9 +1,8 @@
 ﻿using Core.Models;
-using Domain.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Domain.Interfaces
+namespace Service.Interfaces
 {
     public interface IGameService : IGenericService<Game>
     {

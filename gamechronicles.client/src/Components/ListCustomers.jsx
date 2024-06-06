@@ -14,7 +14,7 @@ export const ListCustomers = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [customersPerPage] = useState(10); // Número de clientes por página
     const location = useLocation();
-    const url = "http://localhost:7001/api/customers/";
+    const url = "http://localhost:5207/api/user";
 
     const onRetryTimeout = useCallback(() => {
         fetchData(); // Vuelve a intentar obtener los datos cuando el tiempo de reintentos llegue a cero
@@ -39,9 +39,9 @@ export const ListCustomers = () => {
         }
     }, [url, setRetryTime]);
 
-    const deleteCustomer = async (idCustomer) => {
+    const deleteCustomer = async (idUser) => {
         try {
-            const response = await fetch(`${url}${idCustomer}`, {
+            const response = await fetch(`${url}${idUser}`, {
                 method: "DELETE",
                 headers: { "Content-Type": "application/json" },
             });
@@ -63,7 +63,7 @@ export const ListCustomers = () => {
             });
 
             setCustomers((prevCustomers) =>
-                prevCustomers.filter((customer) => customer.id !== idCustomer)
+                prevCustomers.filter((customer) => customer.id !== idUser)
             );
         } catch (error) {
             setErrorApi(true);

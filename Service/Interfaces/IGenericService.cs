@@ -1,4 +1,4 @@
-﻿namespace Domain.Interfaces
+﻿namespace Service.Interfaces
 {
     public interface IGenericService<TEntity>
     {

@@ -1,7 +1,8 @@
 ﻿using Core.Models;
 using Domain.Interfaces;
+using Service.Interfaces;
 
-namespace Service
+namespace Service.Implementations
 {
     public class GameService : IGameService
     {

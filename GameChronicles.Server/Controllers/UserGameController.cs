@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Core.Models;
-using Service;
+using System;
+using System.Threading.Tasks;
+using Service.Interfaces;
+using Service.Factories;
 
 namespace GameChronicles.Server.Controllers
 {
@@ -10,37 +13,52 @@ namespace GameChronicles.Server.Controllers
     {
         private readonly IUserGameService _userGameService;
 
-        public UserGameController(IUserGameService userGameService)
+        public UserGameController(ServiceFactory serviceFactory)
         {
-            _userGameService = userGameService;
+            _userGameService = serviceFactory.CreateUserGameService();
         }
 
-        // POST: api/UserGame
         [HttpPost]
-        public async Task<ActionResult<UserGame>> AddUserGame([FromBody] UserGame userGame)
+        public async Task<IActionResult> AddUserGame([FromBody] UserGame userGame)
         {
-            try { 
+            if (userGame == null)
+            {
+                return BadRequest("UserGame object is null");
+            }
 
+            try
+            {
                 var addedUserGame = await _userGameService.AssignGameToUserAsync(userGame.UserId, userGame.GameId);
                 return Ok(addedUserGame);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+                return HandleException(ex);
             }
         }
 
-        // DELETE
         [HttpDelete("{userId}/{gameId}")]
         public async Task<IActionResult> UnassignGameFromUser(int userId, int gameId)
         {
-            var userGame = await _userGameService.UnassignGameFromUserAsync(userId, gameId);
-            if (userGame == null)
+            try
             {
-                return NotFound(); 
+                var result = await _userGameService.UnassignGameFromUserAsync(userId, gameId);
+                if (result == null)
+                {
+                    return NotFound();
+                }
+
+                return NoContent();
             }
-            return NoContent();
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
+        private IActionResult HandleException(Exception ex)
+        {
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
     }
 }

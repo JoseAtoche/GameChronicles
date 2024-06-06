@@ -543,3 +543,12 @@ C:\Users\usuario\source\repos\GameChronicles.Server\obj\Debug\net8.0\ref\GameChr
 C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Frontend\package-lock.json
 C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Frontend\package.json
 C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Frontend\public\manifest.json
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\usuario\source\repos\GameChronicles.Server\bin\Debug\net8.0\Serilog.Sinks.File.dll

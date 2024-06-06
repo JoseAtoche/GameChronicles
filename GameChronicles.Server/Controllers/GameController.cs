@@ -1,6 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Core.Models;
-using Domain.Interfaces;
+using Service.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Service.Factories;
+using Serilog;
 
 namespace GameChronicles.Server.Controllers
 {
@@ -10,67 +15,109 @@ namespace GameChronicles.Server.Controllers
     {
         private readonly IGameService _gameService;
 
-        public GameController(IGameService gameService)
+        public GameController(ServiceFactory serviceFactory)
         {
-            _gameService = gameService;
+            _gameService = serviceFactory.CreateGameService();
         }
 
-        // GET: api/Game
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Game>>> Get()
+        public async Task<IActionResult> GetAllGames()
         {
-            var games = await _gameService.GetAllAsync();
-            return Ok(games);
+            try
+            {
+                var games = await _gameService.GetAllAsync();
+                return Ok(games);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
-        // GET: api/Game/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Game>> Get(int id)
+        public async Task<IActionResult> GetGameById(int id)
         {
-            var game = await _gameService.GetByIdAsync(id);
+            try
+            {
+                var game = await _gameService.GetByIdAsync(id);
+                if (game == null)
+                {
+                    return NotFound();
+                }
+                return Ok(game);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateGame([FromBody] Game game)
+        {
             if (game == null)
             {
-                return NotFound();
+                return BadRequest("Game object is null");
             }
-            return game;
+
+            try
+            {
+                var createdGame = await _gameService.CreateAsync(game);
+                return CreatedAtAction(nameof(GetGameById), new { id = createdGame.Id }, createdGame);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
-        // POST: api/Game
-        [HttpPost]
-        public async Task<ActionResult<Game>> Post([FromBody] Game game)
-        {
-            var createdGame = await _gameService.CreateAsync(game);
-            return CreatedAtAction(nameof(Get), new { id = createdGame.Id }, createdGame);
-        }
-
-        // PUT: api/Game/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] Game game)
+        public async Task<IActionResult> UpdateGame(int id, [FromBody] Game game)
         {
-            if (id != game.Id)
+            if (game == null || id != game.Id)
             {
-                return BadRequest();
+                return BadRequest("Game is null or ID mismatch");
             }
 
-            var updated = await _gameService.UpdateAsync(game);
-            if (!updated)
+            try
             {
-                return NotFound();
-            }
+                var updated = await _gameService.UpdateAsync(game);
+                if (!updated)
+                {
+                    return NotFound();
+                }
 
-            return NoContent();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
-        // DELETE: api/Game/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteGame(int id)
         {
-            var deleted = await _gameService.DeleteAsync(id);
-            if (!deleted)
+            try
             {
-                return NotFound();
+                var deleted = await _gameService.DeleteAsync(id);
+                if (!deleted)
+                {
+                    return NotFound();
+                }
+
+                return NoContent();
             }
-            return NoContent();
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
+
+        private IActionResult HandleException(Exception ex)
+        {
+            Log.Error(ex, "Error en el controlador GameController");
+            return StatusCode(500, "Internal server error: " + ex.Message);
         }
     }
 }

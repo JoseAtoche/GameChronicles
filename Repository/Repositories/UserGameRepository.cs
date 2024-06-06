@@ -1,7 +1,8 @@
 ﻿using Core.Models;
-using Repository.Data;
-using Microsoft.EntityFrameworkCore;
 using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Repository.Data;
+using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
@@ -16,20 +17,33 @@ namespace Repository.Repositories
 
         public async Task<UserGame> AssignGameToUserAsync(int userId, int gameId)
         {
+            var userExists = await _context.Users.AnyAsync(u => u.Id == userId).ConfigureAwait(false);
+            var gameExists = await _context.Games.AnyAsync(g => g.Id == gameId).ConfigureAwait(false);
+
+            if (!userExists || !gameExists)
+            {
+                return null;
+            }
+
             var userGame = new UserGame { UserId = userId, GameId = gameId };
             _context.UserGames.Add(userGame);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync().ConfigureAwait(false);
             return userGame;
         }
 
         public async Task<UserGame> UnassignGameFromUserAsync(int userId, int gameId)
         {
-            var userGame = await _context.UserGames.FirstOrDefaultAsync(ug => ug.UserId == userId && ug.GameId == gameId);
-            if (userGame != null)
+            var userGame = await _context.UserGames
+                .FirstOrDefaultAsync(ug => ug.UserId == userId && ug.GameId == gameId)
+                .ConfigureAwait(false);
+
+            if (userGame == null)
             {
-                _context.UserGames.Remove(userGame);
-                await _context.SaveChangesAsync();
+                return null;
             }
+
+            _context.UserGames.Remove(userGame);
+            await _context.SaveChangesAsync().ConfigureAwait(false);
             return userGame;
         }
     }

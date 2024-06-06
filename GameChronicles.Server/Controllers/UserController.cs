@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Core.Models;
-using Service;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Service.Interfaces;
+using System;
+using Service.Factories;
 
 namespace GameChronicles.Server.Controllers
 {
@@ -10,67 +14,108 @@ namespace GameChronicles.Server.Controllers
     {
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService)
+        public UserController(ServiceFactory serviceFactory)
         {
-            _userService = userService;
+            _userService = serviceFactory.CreateUserService();
         }
 
-        // GET: api/User
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> Get()
+        public async Task<IActionResult> GetAllUsers()
         {
-            var users = await _userService.GetAllAsync();
-            return Ok(users);
+            try
+            {
+                var users = await _userService.GetAllAsync();
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
-        // GET: api/User/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> Get(int id)
+        public async Task<IActionResult> GetUserById(int id)
         {
-            var user = await _userService.GetByIdAsync(id);
+            try
+            {
+                var user = await _userService.GetByIdAsync(id);
+                if (user == null)
+                {
+                    return NotFound();
+                }
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateUser([FromBody] User user)
+        {
             if (user == null)
             {
-                return NotFound();
+                return BadRequest("User object is null");
             }
-            return user;
+
+            try
+            {
+                var createdUser = await _userService.CreateAsync(user);
+                return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
-        // POST: api/User
-        [HttpPost]
-        public async Task<ActionResult<User>> Post([FromBody] User user)
-        {
-            var createdUser = await _userService.CreateAsync(user);
-            return CreatedAtAction(nameof(Get), new { id = createdUser.Id }, createdUser);
-        }
-
-        // PUT: api/User/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] User user)
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
         {
-            if (id != user.Id)
+            if (user == null || id != user.Id)
             {
-                return BadRequest();
+                return BadRequest("User object is null or ID mismatch");
             }
 
-            var updated = await _userService.UpdateAsync(user);
-            if (!updated)
+            try
             {
-                return NotFound();
-            }
+                var updated = await _userService.UpdateAsync(user);
+                if (!updated)
+                {
+                    return NotFound();
+                }
 
-            return NoContent();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
         }
 
-        // DELETE: api/User/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
-            var deleted = await _userService.DeleteAsync(id);
-            if (!deleted)
+            try
             {
-                return NotFound();
+                var deleted = await _userService.DeleteAsync(id);
+                if (!deleted)
+                {
+                    return NotFound();
+                }
+
+                return NoContent();
             }
-            return NoContent();
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+        }
+
+        private IActionResult HandleException(Exception ex)
+        {
+            return StatusCode(500, "Internal server error: " + ex.Message);
         }
     }
 }

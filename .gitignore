@@ -53,3 +53,7 @@
 /.vs/GameChronicles/v17/.suo
 /.vs/GameChronicles/v17/DocumentLayout.json
 
+/GameChronicles.Server/obj/Debug/net8.0/GameChronicles.Server.csproj.AssemblyReference.cache
+/Service/obj/Debug/net8.0/Service.AssemblyInfo.cs
+/Service/obj/Debug/net8.0/Service.AssemblyInfoInputs.cache
+/Service/obj/Debug/net8.0/Service.csproj.AssemblyReference.cache

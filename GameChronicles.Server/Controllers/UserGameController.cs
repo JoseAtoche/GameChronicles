@@ -19,13 +19,9 @@ namespace GameChronicles.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<UserGame>> AddUserGame([FromBody] UserGame userGame)
         {
-<<<<<<< HEAD
             try
             {
-=======
-            try { 
 
->>>>>>> 883f64b905d80002963216bea972b3788b646a25
                 var addedUserGame = await _userGameService.AssignGameToUserAsync(userGame.UserId, userGame.GameId);
                 return Ok(addedUserGame);
             }

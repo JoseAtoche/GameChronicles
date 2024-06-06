@@ -53,3 +53,9 @@
 /.vs/GameChronicles/v17/.suo
 /.vs/GameChronicles/v17/DocumentLayout.json
 
+/Core/bin
+/GameChronicles.Server/bin
+/Core/bin
+/Core/bin/Debug
+/Service/obj
+/Repository/obj

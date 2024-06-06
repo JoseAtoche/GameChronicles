@@ -5,15 +5,17 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameChronicles.Server", "GameChronicles.Server\GameChronicles.Server.csproj", "{FB5C5946-40D1-4876-B26D-728B50082903}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "gamechronicles.client", "gamechronicles.client\gamechronicles.client.esproj", "{A094A99E-5A36-4CB2-914E-69791ECA6DA0}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{E70B42CE-5C78-40CA-879D-D90768F2CD12}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{7FDB5CCA-7B48-4282-B936-F55F07994FDE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Core\Domain.csproj", "{4D97D4DE-008D-4F07-A2E4-EB929DBDC9B9}"
 EndProject
+<<<<<<< HEAD
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "frontend", "Frontend\frontend.esproj", "{F3EC85C6-4683-4FBF-A8BD-4AAAFBDF66ED}"
+=======
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "gamechronicles.client", "GameChronicles.Client\gamechronicles.client.esproj", "{A830CE94-63DF-4FE7-AF33-B38F5141E735}"
+>>>>>>> 883f64b905d80002963216bea972b3788b646a25
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,12 +27,6 @@ Global
 		{FB5C5946-40D1-4876-B26D-728B50082903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB5C5946-40D1-4876-B26D-728B50082903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB5C5946-40D1-4876-B26D-728B50082903}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A094A99E-5A36-4CB2-914E-69791ECA6DA0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{E70B42CE-5C78-40CA-879D-D90768F2CD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E70B42CE-5C78-40CA-879D-D90768F2CD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E70B42CE-5C78-40CA-879D-D90768F2CD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,12 +39,21 @@ Global
 		{4D97D4DE-008D-4F07-A2E4-EB929DBDC9B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D97D4DE-008D-4F07-A2E4-EB929DBDC9B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D97D4DE-008D-4F07-A2E4-EB929DBDC9B9}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{F3EC85C6-4683-4FBF-A8BD-4AAAFBDF66ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3EC85C6-4683-4FBF-A8BD-4AAAFBDF66ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3EC85C6-4683-4FBF-A8BD-4AAAFBDF66ED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{F3EC85C6-4683-4FBF-A8BD-4AAAFBDF66ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3EC85C6-4683-4FBF-A8BD-4AAAFBDF66ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3EC85C6-4683-4FBF-A8BD-4AAAFBDF66ED}.Release|Any CPU.Deploy.0 = Release|Any CPU
+=======
+		{A830CE94-63DF-4FE7-AF33-B38F5141E735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A830CE94-63DF-4FE7-AF33-B38F5141E735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A830CE94-63DF-4FE7-AF33-B38F5141E735}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A830CE94-63DF-4FE7-AF33-B38F5141E735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A830CE94-63DF-4FE7-AF33-B38F5141E735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A830CE94-63DF-4FE7-AF33-B38F5141E735}.Release|Any CPU.Deploy.0 = Release|Any CPU
+>>>>>>> 883f64b905d80002963216bea972b3788b646a25
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

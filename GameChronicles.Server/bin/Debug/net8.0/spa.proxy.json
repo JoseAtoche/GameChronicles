@@ -3,7 +3,11 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
+<<<<<<< HEAD
 "WorkingDirectory": "C:\\Users\\Usuario\\Source\\Repos\\GameChronicles\\GameChronicles.Server\\..\\gamechronicles.client",
+=======
+"WorkingDirectory": "C:\\Users\\usuario\\source\\repos\\GameChronicles.Server\\..\\gamechronicles.client",
+>>>>>>> 883f64b905d80002963216bea972b3788b646a25
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

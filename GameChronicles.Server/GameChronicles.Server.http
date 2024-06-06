@@ -1,6 +1,6 @@
 @GameChronicles.Server_HostAddress = http://localhost:5207
 
-GET {{GameChronicles.Server_HostAddress}}/weatherforecast/
+GET {{GameChronicles.Server_HostAddress}}/
 Accept: application/json
 
 ###

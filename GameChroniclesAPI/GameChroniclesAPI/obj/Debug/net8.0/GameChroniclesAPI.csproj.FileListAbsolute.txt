@@ -1,8 +1,0 @@
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.csproj.AssemblyReference.cache
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.AssemblyInfoInputs.cache
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.AssemblyInfo.cs
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.csproj.CoreCompileInputs.cache
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\usuario\source\repos\GameChroniclesAPI\GameChroniclesAPI\obj\Debug\net8.0\GameChroniclesAPI.sourcelink.json

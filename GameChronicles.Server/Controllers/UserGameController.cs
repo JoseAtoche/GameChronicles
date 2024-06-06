@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Core.Models;
 using Service;
+using Service.Interfaces;
 
 namespace GameChronicles.Server.Controllers
 {

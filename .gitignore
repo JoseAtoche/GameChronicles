@@ -7,7 +7,7 @@
 *.cache
 *.txt
 
-# Archivos de compilación específicos de .NET
+# Archivos específicos de .NET y .NET Core
 *.AssemblyAttributes.cs
 *.AssemblyInfo.cs
 *.AssemblyInfoInputs.cache
@@ -17,39 +17,7 @@
 *.GlobalUsings.g.cs
 *.sourcelink.json
 
-# Archivos específicos de .NET Core
-/obj/Debug/net8.0/
-/obj/Release/net8.0/
-
 # Archivos de salida de compilación de aplicaciones y bibliotecas
 *.dll
 *.exe
 *.pdb
-
-# Archivos específicos de proyectos
-/GameChronicles.Server/obj/Debug/net8.0/
-/GameChroniclesAPI/obj/Debug/net8.0/
-/Core/obj/Debug/net8.0/
-/Domain/obj/Debug/net8.0/
-/Service/obj/Debug/net8.0/
-/Repository/obj/Debug/net8.0/
-
-# Archivos de salida específicos de Visual Studio
-.vs/GameChronicles/
-.vs/GameChroniclesAPI/
-
-# Archivos generados por Visual Studio
-.vs/GameChronicles/FileContentIndex/
-.vs/GameChronicles/v17/
-.vs/GameChroniclesAPI/DesignTimeBuild/
-.vs/GameChroniclesAPI/FileContentIndex/
-.vs/GameChroniclesAPI/v17/
-
-# Otros archivos específicos de Visual Studio
-.vs/ProjectEvaluation/
-/GameChronicles.Server/obj/Debug/net8.0/GameChronicles.Server.csproj.FileListAbsolute.txt
-/GameChronicles.Server/obj/Debug/net8.0/GameChronicles.Server.assets.cache
-/gamechronicles.client/obj/Debug/gamechronicles.client.esproj.FileListAbsolute.txt
-/Core/obj/Debug/net8.0/Domain.csproj.FileListAbsolute.txt
-/Core/obj/Debug/net8.0/Domain.assets.cache
-/Service/obj/Debug/net8.0/Service.assets.cache
